@@ -1,5 +1,5 @@
-class Solution:
-    def isPalindrome(self, x: int) -> bool:
+class Solution(object):
+    def isPalindrome(self, x):
         revNum = 0
         dup = x
 
@@ -9,5 +9,8 @@ class Solution:
             x //= 10
 
         return dup == revNum
-
-
+        """
+        :type x: int
+        :rtype: bool
+        """
+        

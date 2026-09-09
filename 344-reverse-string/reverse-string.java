@@ -1,8 +1,14 @@
 class Solution {
     public void reverseString(char[] s) {
-        StringBuilder reverse = new StringBuilder(new String(s)).reverse();
-          for(int i = 0; i<s.length; i++){
-            s[i] = reverse.charAt(i);
-          }
+        int n = s.length; 
+        int l = 0;
+        int r = n -1;
+        while(l<r){
+            char ch = s[l];
+            s[l] = s[r];
+            s[r] = ch;
+            l++;
+            r--;
+        }
     }
 }
